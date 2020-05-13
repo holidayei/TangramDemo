@@ -1,0 +1,89 @@
+[
+  {
+    "type": "container-banner",
+    "style": {
+      "margin": "[0,0,10,0]",
+      "pageWidth": 200,
+      "pageHeight": 100,
+      "indicatorMargin": "5",
+      "infinite": "true",
+      "indicatorImg2": "https://img.alicdn.com/tps/TB1XRNFNXXXXXXKXXXXXXXXXXXX-32-4.png",
+      "indicatorImg1": "https://img.alicdn.com/tps/TB16i4qNXXXXXbBXFXXXXXXXXXX-32-4.png",
+      "scrollMarginLeft": "10",
+      "indicatorGap": "2",
+      "indicatorHeight": "1.5",
+      "itemRatio": "2.654",
+      "scrollMarginRight": "10",
+      "indicatorGravity": "center",
+      "hGap": "20"
+    },
+    "items": [
+      {
+        "imgUrl": "https://wanandroid.com/blogimgs/942a5c62-ca87-4e7c-a93d-41ff59a15ba4.png",
+        "type": "SingleImageView"
+      },
+      {
+        "imgUrl": "https://www.wanandroid.com/blogimgs/62c1bd68-b5f3-4a3c-a649-7ca8c7dfabe6.png",
+        "type": "SingleImageView"
+      },
+      {
+        "imgUrl": "https://www.wanandroid.com/blogimgs/50c115c2-cf6c-4802-aa7b-a4334de444cd.png",
+        "type": "SingleImageView"
+      },
+      {
+        "imgUrl": "https://www.wanandroid.com/blogimgs/90c6cc12-742e-4c9f-b318-b912f163b8d0.png",
+        "type": "SingleImageView"
+      }
+    ]
+  },
+  {
+    "type": "container-fourColumn",
+    "items": [
+      {
+        "imgUrl": "https://tva1.sinaimg.cn/large/007S8ZIlgy1geqp9zhftrj303r03r3yl.jpg",
+        "title": "标题1",
+        "type": "ImageTextView"
+      },
+      {
+        "imgUrl": "https://tva1.sinaimg.cn/large/007S8ZIlgy1geqp9zhftrj303r03r3yl.jpg",
+        "title": "标题2",
+        "type": "ImageTextView"
+      },
+      {
+        "imgUrl": "https://tva1.sinaimg.cn/large/007S8ZIlgy1geqp9zhftrj303r03r3yl.jpg",
+        "title": "标题3",
+        "type": "ImageTextView"
+      },
+      {
+        "imgUrl": "https://tva1.sinaimg.cn/large/007S8ZIlgy1geqp9zhftrj303r03r3yl.jpg",
+        "title": "标题4",
+        "type": "ImageTextView"
+      }
+    ]
+  },
+  {
+    "type": "container-onePlusN",
+    "style": {
+      "aspectRatio": "1.778",
+      "margin": "[10,0,0,0]"
+    },
+    "items": [
+      {
+        "imgUrl": "https://wanandroid.com/blogimgs/942a5c62-ca87-4e7c-a93d-41ff59a15ba4.png",
+        "type": "SingleImageView"
+      },
+      {
+        "imgUrl": "https://www.wanandroid.com/blogimgs/62c1bd68-b5f3-4a3c-a649-7ca8c7dfabe6.png",
+        "type": "SingleImageView"
+      },
+      {
+        "imgUrl": "https://www.wanandroid.com/blogimgs/50c115c2-cf6c-4802-aa7b-a4334de444cd.png",
+        "type": "SingleImageView"
+      },
+      {
+        "imgUrl": "https://www.wanandroid.com/blogimgs/90c6cc12-742e-4c9f-b318-b912f163b8d0.png",
+        "type": "SingleImageView"
+      }
+    ]
+  }
+]
