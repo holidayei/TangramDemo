@@ -44,8 +44,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'
 
-    //tangram相关：tangram使用3.0之前的最新版本，其他直接使用最新版本
-    implementation 'com.alibaba.android:tangram:2.2.5@aar'
+    //tangram相关：
+    implementation 'com.alibaba.android:tangram:3.1.9.5@aar'
     //tangram底层支持：vlayout
     implementation 'com.alibaba.android:vlayout:1.2.36@aar'
     //tangram虚拟视图（更灵活的视图，后面单独开篇讲）
@@ -57,6 +57,8 @@ dependencies {
     //tangram内部需要rxjava
     implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    //card：container-scroll需要依赖这个
+    implementation 'me.everything:overscroll-decor-android:1.0.4'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'

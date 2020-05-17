@@ -19,6 +19,7 @@ import org.json.JSONException;
 
 /**
  * 使用文档：https://github.com/alibaba/Tangram-Android/blob/master/docs/Tutorial-ch.md
+ * 参数文档：http://tangram.pingguohe.net/docs/layout-support/linearscroll-layout
  */
 public class MainActivity extends AppCompatActivity {
 

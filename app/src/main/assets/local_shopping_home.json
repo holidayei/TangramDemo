@@ -1,0 +1,80 @@
+{
+  "requestMakeup": "http://rest.apizza.net/mock/3f233eed2d9be716a5f48fccb9c719f2/tangram/shopping/home",
+  "requestList": "https://www.wanandroid.com/article/list/%s/json",
+  "templateName": "local_shopping_home",
+  "template": [
+    {
+      "type": "container-banner",
+      "load": "makeup:banner",
+      "itemType": "SingleImageView",
+      "style": {
+        "indicatorMargin": "5",
+        "infinite": "true",
+        "indicatorImg2": "https://img.alicdn.com/tps/TB1XRNFNXXXXXXKXXXXXXXXXXXX-32-4.png",
+        "indicatorImg1": "https://img.alicdn.com/tps/TB16i4qNXXXXXbBXFXXXXXXXXXX-32-4.png",
+        "indicatorGap": "2",
+        "indicatorHeight": "1.5",
+        "itemRatio": "2.654",
+        "indicatorGravity": "center",
+        "autoScroll": 3000
+      }
+    },
+    {
+      "type": "container-fourColumn",
+      "load": "makeup:category",
+      "itemType": "ImageTextView",
+      "style": {
+        "padding": [
+          9,
+          9,
+          9,
+          9
+        ]
+      }
+    },
+    {
+      "type": "container-onePlusN",
+      "load": "makeup:onePlusN",
+      "itemType": "SingleImageView",
+      "style": {
+        "aspectRatio": "1.778",
+        "padding": [
+          9,
+          9,
+          0,
+          9
+        ]
+      }
+    },
+    {
+      "type": "container-oneColumn",
+      "load": "makeup:bottomTitle",
+      "itemType": "SingleTextView",
+      "style": {
+        "padding": [
+          9,
+          9,
+          0,
+          9
+        ]
+      }
+    },
+    {
+      "type": "container-waterfall",
+      "load": "xxx",
+      "itemType": "GoodsItemView",
+      "style": {
+        "column": 2,
+        "hGap": "4",
+        "vGap": "4",
+        "margin": [
+          9,
+          9,
+          0,
+          9
+        ],
+        "itemBgColor": "#dcdcdc"
+      }
+    }
+  ]
+}

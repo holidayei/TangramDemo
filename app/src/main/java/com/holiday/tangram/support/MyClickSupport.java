@@ -14,6 +14,7 @@ public class MyClickSupport extends SimpleClickSupport {
     @Override
     public void defaultClick(View targetView, BaseCell cell, int eventType) {
         super.defaultClick(targetView, cell, eventType);
-        QrToast.show(cell.stringType);
+        QrToast.show("type = " + cell.stringType +
+                "\nlink = " + cell.optStringParam("link"));
     }
 }

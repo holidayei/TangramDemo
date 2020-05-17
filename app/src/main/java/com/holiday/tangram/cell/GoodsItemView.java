@@ -16,25 +16,25 @@ import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
 
 /**
- * 自定义cell：上图下文
+ * 自定义cell：商品样式
  */
-public class ImageTextView extends LinearLayout implements ITangramViewLifeCycle {
+public class GoodsItemView extends LinearLayout implements ITangramViewLifeCycle {
     private NetImageView mImgIcon;
     private TextView mTvTitle;
 
-    public ImageTextView(Context context) {
+    public GoodsItemView(Context context) {
         this(context, null);
     }
 
-    public ImageTextView(Context context, @Nullable AttributeSet attrs) {
+    public GoodsItemView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public ImageTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public GoodsItemView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setOrientation(VERTICAL);
         setGravity(Gravity.CENTER);
-        inflate(getContext(), R.layout.cell_image_text, this);
+        inflate(getContext(), R.layout.cell_goods_item, this);
         mImgIcon = findViewById(R.id.img_icon);
         mTvTitle = findViewById(R.id.tv_title);
     }
@@ -48,6 +48,9 @@ public class ImageTextView extends LinearLayout implements ITangramViewLifeCycle
     public void postBindView(BaseCell cell) {
         mImgIcon.load(cell.optStringParam("imgUrl"));
         mTvTitle.setText(cell.optStringParam("title"));
+
+        String itemBgColor = cell.parent.optStringParam("itemBgColor");
+        setBackgroundColor(Color.parseColor(TextUtils.isEmpty(itemBgColor) ? "#333333" : itemBgColor));
 
         String textColor = cell.parent.optStringParam("textColor");
         mTvTitle.setTextColor(Color.parseColor(TextUtils.isEmpty(textColor) ? "#333333" : textColor));

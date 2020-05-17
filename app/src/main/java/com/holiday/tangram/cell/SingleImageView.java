@@ -10,7 +10,7 @@ import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
 
 /**
- * 自定义cell
+ * 自定义cell：单图
  */
 public class SingleImageView extends NetImageView implements ITangramViewLifeCycle {
     public SingleImageView(Context context) {
