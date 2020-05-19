@@ -1,0 +1,79 @@
+{
+  "requestMakeup": "http://172.17.38.218:8081/tangram_service/makeup?id=1",
+  "requestList": "http://172.17.38.218:8081/tangram_service/goods?page=%s",
+  "templateName": "local_shopping_home_v3",
+  "template": [
+    {
+      "type": "container-banner",
+      "load": "makeup:banner",
+      "itemType": "SingleImageView",
+      "style": {
+        "indicatorMargin": "5",
+        "infinite": "true",
+        "indicatorImg2": "https://img.alicdn.com/tps/TB1XRNFNXXXXXXKXXXXXXXXXXXX-32-4.png",
+        "indicatorImg1": "https://img.alicdn.com/tps/TB16i4qNXXXXXbBXFXXXXXXXXXX-32-4.png",
+        "indicatorGap": "2",
+        "indicatorHeight": "1.5",
+        "itemRatio": "2.654",
+        "indicatorGravity": "center"
+      }
+    },
+    {
+      "type": "container-fourColumn",
+      "load": "makeup:category",
+      "itemType": "ImageTextView",
+      "style": {
+        "padding": [
+          9,
+          9,
+          9,
+          9
+        ]
+      }
+    },
+    {
+      "type": "container-onePlusN",
+      "load": "makeup:onePlusN",
+      "itemType": "SingleImageView",
+      "style": {
+        "aspectRatio": "1.778",
+        "padding": [
+          9,
+          9,
+          0,
+          9
+        ]
+      }
+    },
+    {
+      "type": "container-oneColumn",
+      "load": "makeup:bottomTitle",
+      "itemType": "SingleTextView",
+      "style": {
+        "padding": [
+          9,
+          9,
+          0,
+          9
+        ]
+      }
+    },
+    {
+      "type": "container-waterfall",
+      "load": "xxx",
+      "itemType": "GoodsItemViewV3",
+      "style": {
+        "column": 2,
+        "hGap": "4",
+        "vGap": "4",
+        "margin": [
+          9,
+          9,
+          0,
+          9
+        ],
+        "itemBgColor": "#ffffff"
+      }
+    }
+  ]
+}

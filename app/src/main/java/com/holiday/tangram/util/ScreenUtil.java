@@ -1,8 +1,11 @@
 package com.holiday.tangram.util;
 
+import android.content.res.Resources;
+import android.util.DisplayMetrics;
+
 import com.holiday.tangram.MyApp;
 
-public class DensityUtil {
+public class ScreenUtil {
 
     public static int dip2px(float dpValue) {
         float scale = MyApp.app.getResources().getDisplayMetrics().density;
@@ -27,6 +30,12 @@ public class DensityUtil {
     public static int sp2px(float spValue) {
         float scale = MyApp.app.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spValue * scale + 0.5F * (float) (spValue >= 0.0F ? 1 : -1));
+    }
+
+    public static int screenW() {
+        Resources resources = MyApp.app.getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        return dm.widthPixels;
     }
 }
 

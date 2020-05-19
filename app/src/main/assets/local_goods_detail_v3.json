@@ -1,0 +1,18 @@
+{
+  "requestMakeup": "http://rest.apizza.net/mock/3f233eed2d9be716a5f48fccb9c719f2/tangram/goods/detail",
+  "templateName": "local_goods_detail_v3",
+  "template": [
+    {
+      "type": "container-scroll",
+      "load": "makeup:banner",
+      "itemType": "SingleImageView",
+      "style": {
+        "pageWidth": 200,
+        "pageHeight": 300,
+        "hasIndicator": true,
+        "indicatorColor": "#FF0000",
+        "defaultIndicatorColor": "#666666"
+      }
+    }
+  ]
+}

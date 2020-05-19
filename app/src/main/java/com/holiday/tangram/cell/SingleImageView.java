@@ -2,9 +2,11 @@ package com.holiday.tangram.cell;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
+import com.holiday.tangram.util.ImgUrlParseUtil;
 import com.holiday.tangram.view.NetImageView;
 import com.tmall.wireless.tangram.structure.BaseCell;
 import com.tmall.wireless.tangram.structure.view.ITangramViewLifeCycle;
@@ -33,7 +35,12 @@ public class SingleImageView extends NetImageView implements ITangramViewLifeCyc
 
     @Override
     public void postBindView(BaseCell cell) {
-        load(cell.optStringParam("imgUrl"));
+        String imgUrl = cell.optStringParam("imgUrl");
+        int[] wh = ImgUrlParseUtil.parse(imgUrl);
+        //设置宽高
+        if (null == getLayoutParams() || wh[0] != getLayoutParams().width || wh[1] != getLayoutParams().width)
+            setLayoutParams(new ViewGroup.LayoutParams(wh[0], wh[1]));
+        load(imgUrl);
     }
 
     @Override

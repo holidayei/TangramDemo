@@ -16,11 +16,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="toShoppingHome"
-        android:text="2.数据分离-商城首页" />
+        android:text="2.Demo2-数据分离-商城首页"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="toGoodsDetail"
-        android:text="2.数据分离-商品详情" />
+        android:text="2.Demo2-数据分离-商品详情"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toShoppingHomeV3"
+        android:text="3.Demo3-非继承-商城首页"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toGoodsDetailV3"
+        android:text="3.Demo3-非继承-商品详情"
+        android:textAllCaps="false" />
 </LinearLayout>

@@ -21,7 +21,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".demo2.ShoppingHomeAct"></activity>
+        <activity android:name=".demo3.ShoppingHomeActV3">
+
+        </activity>
         <activity android:name=".demo2.GoodsDetailAct">
+
+        </activity>
+        <activity android:name=".demo3.GoodsDetailActV3">
 
         </activity>
         <activity android:name=".MainActivity"></activity>
