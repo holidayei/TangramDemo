@@ -1,6 +1,6 @@
 {
-  "requestMakeup": "http://172.17.38.218:8081/tangram_service/makeup?id=1",
-  "requestList": "http://172.17.38.218:8081/tangram_service/goods?page=%s",
+  "requestMakeup": "http://49.235.200.213/tangram_service/makeup?id=1",
+  "requestList": "http://49.235.200.213/tangram_service/goods?page=%s",
   "templateName": "local_shopping_home_v3",
   "template": [
     {

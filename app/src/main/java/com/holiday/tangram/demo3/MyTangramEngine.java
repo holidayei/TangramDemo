@@ -52,6 +52,8 @@ import okhttp3.Call;
 
 /**
  * 简单封装，改成非继承使用
+ * <p>
+ * 加载数据：http://tangram.pingguohe.net/docs/android/load-data
  */
 public class MyTangramEngine implements DefaultLifecycleObserver {
     /**
