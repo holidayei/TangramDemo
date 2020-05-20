@@ -13,8 +13,9 @@
 
 - demo2包：
 > 将数据从json模板中分离出来
-- demo3包（需要运行服务端获取数据）：
+- demo3包：
 > 包装`MyTangramEngine`替换继承`TangramActivity`
+
 > 搭建[TangramService服务端](https://github.com/holidayei/TangramService)模拟商城数据，可以使用提供的公网ip，或者本地运行服务端
 
 运行效果：
